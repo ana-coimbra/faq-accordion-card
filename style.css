@@ -1,0 +1,150 @@
+:root {
+  --darkblue: hsl(238, 29%, 16%);
+  --softred: hsl(14, 88%, 65%);
+  --softviolet: hsl(273, 75%, 66%);
+  --softblue: hsl(240, 73%, 65%);
+  --darkgreyblue: hsl(237, 12%, 33%);
+  --greyblue: hsl(240, 6%, 50%);
+  --lightgreyblue: hsl(240, 5%, 91%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(var(--softviolet), var(--softblue));
+  color: var(--darkgreyblue);
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  height: 100vh;
+}
+
+/* Container */
+
+.container {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 15px 30px rgb(0 0 0 / 40%);
+  display: grid;
+  grid-template-columns: 0 500px auto;
+  width: 920px;
+}
+
+/* Illustrations | Left Section */
+
+.box {
+  position: relative;
+  z-index: 1;
+  top: 12.5rem;
+  right: 6rem;
+}
+
+.illustration {
+  background-image: url("images/bg-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: -36rem -18rem;
+  display: inline-block;
+  overflow: hidden;
+  min-height: 520px;
+  max-height: 640px;
+}
+
+.main-illustration {
+  position: relative;
+  right: 5rem;
+  top: 4rem;
+  overflow: hidden;
+}
+
+/* FAQ Section */
+
+.faq-section {
+  align-self: center;
+  padding: 4rem 6rem 2rem 0.5rem;
+}
+
+.faq-section h1 {
+  color: var(--darkblue);
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+/* FAQ Sub Section - Questions */
+
+.faq-question {
+  border-bottom: 1px solid var(--lightgreyblue);
+  cursor: pointer;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.4s;
+  padding: 15px 0;
+}
+
+.question:hover {
+  color: var(--softred);
+}
+
+.icon {
+  padding-right: 10px;
+  transform: rotateX(0deg);
+  transition: 0.3s ease;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.answer p {
+  color: var(--greyblue);
+  line-height: 1.5;
+}
+
+/* FAQ Sub Section - Questions | Active States */
+
+.faq-question.active {
+  padding-bottom: 15px;
+}
+
+.faq-question.active .question {
+  color: var(--darkblue);
+  font-weight: 700;
+}
+
+.faq-question.active .answer {
+  max-height: 55px;
+}
+
+.faq-question.active .icon {
+  transform: rotateX(180deg);
+}
+
+/* Footer */
+
+.attribution {
+  color: var(--lightgreyblue);
+  font-size: 11px;
+  margin-top: 2rem;
+  text-align: center;
+}
+.attribution a {
+  color: var(--lightgreyblue);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: #fff;
+}
