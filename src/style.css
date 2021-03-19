@@ -153,14 +153,14 @@ body {
   body {
     align-content: start;
     justify-content: center;
-    margin: 10rem 0 4rem;
+    margin: 10rem 0 2rem;
   }
 
   /* Container */
 
   .container {
     min-height: 420px;
-    max-height: 940px;
+
     grid-template-columns: 320px;
     grid-template-rows: 120px auto;
     width: 320px;
@@ -196,6 +196,7 @@ body {
   .faq-section {
     align-self: start;
     padding: 1rem 2rem 2rem;
+    max-height: 740px;
   }
 
   .faq-section h1 {
