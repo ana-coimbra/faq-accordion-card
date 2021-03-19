@@ -153,15 +153,14 @@ body {
   body {
     align-content: start;
     justify-content: center;
-    margin: 8rem 0 1rem;
+    margin: 10rem 0 1rem;
   }
 
   /* Container */
 
   .container {
     min-height: 420px;
-    max-height: 740px;
-    margin-top: 2rem;
+    max-height: 940px;
     grid-template-columns: 320px;
     grid-template-rows: 120px auto;
     width: 320px;
