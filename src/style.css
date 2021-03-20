@@ -186,7 +186,7 @@ body {
     background-position: 2rem -0.5rem;
     overflow: visible;
     min-height: 0;
-    max-height: 110px;
+    max-height: 120px;
   }
 
   .main-illustration {
@@ -198,8 +198,8 @@ body {
   /* FAQ Section */
 
   .faq-section {
-    padding: 2rem 2rem 2rem;
-    height: 360px;
+    padding: 1rem 2rem 2rem;
+    height: 350px;
   }
 
   .faq-section h1 {
