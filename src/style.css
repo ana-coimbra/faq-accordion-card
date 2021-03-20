@@ -159,7 +159,7 @@ body {
   body {
     align-content: start;
     justify-content: center;
-    margin: 10rem 0;
+    margin: 10rem 0 2rem;
     height: inherit;
   }
 
