@@ -160,6 +160,7 @@ body {
     align-content: start;
     justify-content: center;
     margin: 10rem 0;
+    height: inherit;
   }
 
   /* Container */
